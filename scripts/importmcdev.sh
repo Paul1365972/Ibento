@@ -88,7 +88,7 @@ function importLibrary {
 # but after you have paper rb'd your changes, remove the line from this file before committing.
 #
 # import FileName
-
+#import Entity.java
 
 
 ########################################################
