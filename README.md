@@ -2,7 +2,7 @@
 
 [![GitHub-CI Workflow Status](https://badgen.net/github/checks/Paul1365972/Ibento?label=Github%20Build&icon=github)](https://github.com/Paul1365972/Ibento/actions?query=workflow%3A%22Build%22)
 
-Ibento is the example fork of [Ilblu](https://github.com/Pal1365972/Ilblu).
+Ibento is the example fork of [Ilblu](https://github.com/Paul1365972/Ilblu).
 It contains all patches I could find, that add upon the event api. If you find more or want to add your own just create an issue or pull request!
 
 ## Get Ibento
