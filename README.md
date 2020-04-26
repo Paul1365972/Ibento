@@ -51,15 +51,20 @@ This also includes the Paper-, Spigot- and Bukkit-API
 #### Requirements
 
 - Java (JDK) 8 or above
-- Maven
 - Git, with a configured user name and email. 
   On windows you need to run from git bash.
+
+**Optionally**
+
+- Maven 3+ (Will be installed locally if not present)
+- Gradle 6+ (Uses gradle wrapper anyway)
 
 #### Compile
 
 If all you want is a paperclip server jar, just run:
 ```sh
-./gradlew paperInit paperApply paperclip
+./gradlew ilbluInitApply
+./gradlew ilbluPaperclip
 ```
 
 ## Fork
@@ -74,7 +79,7 @@ Creating a fork via Ilblu has several advantages:
 1. Fork this project
 2. Edit `gradle.properties` to your likings
 3. Add your fork name to the end of `/patches/apply`
-4. Run ```./gradlew paperInit paperApplyPatches paperRebuildPatches```
+4. Run ```./gradlew ilbluInitApply ilbluRebuildPatches```
 5. (Edit the README.md)
 
 ### Add patch modules
@@ -89,20 +94,20 @@ Now add the name of the path to the patches folder above your fork in `/patches/
 
 Since Ilblu is patched frequently to stay up to date with [Paper](https://github.com/PaperMC/Paper), keeping your fork in sync is important to get any new features as soon as they come out. Choose any way you prefer:
 
-- Sync Ilblu (Recommended): `./gradlew paperSync`
+- Sync Ilblu (Recommended): `./gradlew ilbluSync`
 
-- Only update Paper: `./gradlew paperMergeUp`
+- Only update Paper: `./gradlew ilbluMergeUp`
 
 - Do it by manually. Not sure how? [GitHub Help - Syncing a Fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
 
 ## Developing
 
-To get started clone this repository and run `./gradlew paperInit paperApplyPatches` or `./ilblu patch init` to setup your workspace.
+To get started clone this repository and run `./gradlew ilbluInitApply` or `./ilblu patch init` to setup your workspace.
 
 ### Creating patches
 
 - Make changes to `/<NAME>-API` or `/<NAME>-Server` and commit them
-- Run `./gradlew paperRebuildPatches` or `./ilblu rebuild`  to create the patch files
+- Run `./gradlew ilbluRebuildPatches` or `./ilblu rebuild`  to create the patch files
 - Finish by committing and pushing the changes made to the patch files
 
 ### Testing
@@ -113,7 +118,7 @@ To build your test server jar just run ```./gradlew shadowJar```, output in `/<N
 
 ### Deploying
 
-To get a distributable server jar (paperclip), just run ```./gradlew paperclip```, output in main directory
+To get a distributable server jar (paperclip), just run ```./gradlew ilbluPaperclip```, output in main directory
 
 ### Still confused?
 

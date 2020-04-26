@@ -26,10 +26,10 @@ index d96c03a1a164799f49fdb3309594e7592a8d2206..9fc637f96aa467a8c8e1e108d9a77c10
  
      public static int getFireAspectEnchantmentLevel(EntityLiving entityliving) {
 diff --git a/src/main/java/net/minecraft/server/EntityHuman.java b/src/main/java/net/minecraft/server/EntityHuman.java
-index 8a3f2b5e40e791c4750fcc45c7d8eab41b7c9c6e..60c4f1fd3cd7f928711085df532397fdb721328f 100644
+index 2e186134eab5a12bb27fb368406698c462e884b8..49433c46182a24670aa5d9144a47209e41c9b8bd 100644
 --- a/src/main/java/net/minecraft/server/EntityHuman.java
 +++ b/src/main/java/net/minecraft/server/EntityHuman.java
-@@ -1062,7 +1062,7 @@ public abstract class EntityHuman extends EntityLiving {
+@@ -1066,7 +1066,7 @@ public abstract class EntityHuman extends EntityLiving {
                      boolean flag = f2 > 0.9F;
                      boolean flag1 = false;
                      byte b0 = 0;

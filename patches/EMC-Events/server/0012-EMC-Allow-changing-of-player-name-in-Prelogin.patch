@@ -6,7 +6,7 @@ Subject: [PATCH] EMC Allow changing of player name in Prelogin
 This is so we can disable player renames and force them to use old name temporarily.
 
 diff --git a/src/main/java/net/minecraft/server/LoginListener.java b/src/main/java/net/minecraft/server/LoginListener.java
-index f1222fcb2bd52b8781d0f92c94e1472fa7b1e493..99541fd35818150a3afa482e657abc4da92c8ff9 100644
+index 28f48f22522ef8c3c66381abcf017f0859b45290..71bb11527642a39b02b8bc53297dcc72d3e085b1 100644
 --- a/src/main/java/net/minecraft/server/LoginListener.java
 +++ b/src/main/java/net/minecraft/server/LoginListener.java
 @@ -316,6 +316,11 @@ public class LoginListener implements PacketLoginInListener {

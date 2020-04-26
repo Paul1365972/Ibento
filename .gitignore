@@ -26,6 +26,8 @@ build/
 
 # Maven
 target/
+/apache-maven-*/
+/maven/
 
 # IntelliJ
 *.iml
