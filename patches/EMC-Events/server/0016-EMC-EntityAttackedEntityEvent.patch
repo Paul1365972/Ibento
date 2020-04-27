@@ -7,7 +7,7 @@ For when you need to know one Entity has attacked another entity
 and that the damage event was not cancelled.
 
 diff --git a/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java b/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java
-index 75d38bc5d1f31e775565ac47334a838a58202bec..306595f5d644079159dee432c6b6687f64f0e3d6 100644
+index 88cdb0d8a1ad3ec626946e5d1efe9e2d08480fa9..ccb482bd39f67b9efaae16d46916f4cce1985074 100644
 --- a/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java
 +++ b/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java
 @@ -1000,7 +1000,14 @@ public class CraftEventFactory {

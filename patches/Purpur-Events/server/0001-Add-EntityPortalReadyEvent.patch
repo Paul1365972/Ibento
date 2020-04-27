@@ -80,7 +80,7 @@ index 09c7c131833ded951e49a7a1a2eb2e1f6f8cb989..6880cdd7f94b0bd92d863e7c00d2ad02
                      break;
                      // CraftBukkit start - add the block to our list
 diff --git a/src/main/java/net/minecraft/server/Entity.java b/src/main/java/net/minecraft/server/Entity.java
-index a69969f46b345cce3b7ad93b583baa583c5dd003..c5578caa83742c57af1625a32dfd794d19f6c8b3 100644
+index 14ba037c1dc042f81123b3f31ad5c3485e59b773..9f8313ac420d69e633fa6c17c03f28b952853a43 100644
 --- a/src/main/java/net/minecraft/server/Entity.java
 +++ b/src/main/java/net/minecraft/server/Entity.java
 @@ -169,9 +169,9 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke

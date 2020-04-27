@@ -21,7 +21,9 @@ function applyPatch {
 
     cd "$basedir/$target/"
     $gitcmd am --abort 2>/dev/null || true
-    find "$basedir/patches/$patches_folder/" -name "*.patch" -print0 | sort -z | xargs -0 $applycmd
+    if [ -d "$basedir/patches/$patches_folder/" ]; then
+        find "$basedir/patches/$patches_folder/" -name "*.patch" -print0 | sort -z | xargs -0 $applycmd
+    fi
 }
 
 function apply() {
@@ -71,7 +73,7 @@ function apply() {
 "$basedir/scripts/importmcdev.sh" "$basedir"
 
 (
-    apply Paper/Paper-API ${FORK_NAME}-API api &&
+    apply Paper/Paper-API ${FORK_NAME}-API api
     apply Paper/Paper-Server ${FORK_NAME}-Server server
 
     # if we have previously created mcdev, update it

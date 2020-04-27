@@ -5,7 +5,7 @@ Subject: [PATCH] Implement EntityMoveEvent
 
 
 diff --git a/src/main/java/net/minecraft/server/EntityLiving.java b/src/main/java/net/minecraft/server/EntityLiving.java
-index b40ba3a21142c0c31f323523d83784e26581eabe..7e1d9ddddcf544368898722ffb2a1d216b8a1dde 100644
+index 60077cbcca5d2d8f3238cffab3bb89511a0e9f52..63acc1294e1273ac9fa3db442511195a57424447 100644
 --- a/src/main/java/net/minecraft/server/EntityLiving.java
 +++ b/src/main/java/net/minecraft/server/EntityLiving.java
 @@ -17,6 +17,7 @@ import java.util.Random;
@@ -16,7 +16,7 @@ index b40ba3a21142c0c31f323523d83784e26581eabe..7e1d9ddddcf544368898722ffb2a1d21
  import org.apache.commons.lang3.tuple.Pair;
  
  // CraftBukkit start
-@@ -2647,6 +2648,20 @@ public abstract class EntityLiving extends Entity {
+@@ -2660,6 +2661,20 @@ public abstract class EntityLiving extends Entity {
  
          this.collideNearby();
          this.world.getMethodProfiler().exit();

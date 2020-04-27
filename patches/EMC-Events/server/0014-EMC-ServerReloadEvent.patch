@@ -5,10 +5,10 @@ Subject: [PATCH] EMC ServerReloadEvent
 
 
 diff --git a/src/main/java/org/bukkit/craftbukkit/CraftServer.java b/src/main/java/org/bukkit/craftbukkit/CraftServer.java
-index 7b566fc67acbb4c86b972e8878c3cc9c45c486b7..6cb563f4db190d35b1bbe9b7c8dc111a394413fb 100644
+index 471bdab741f4419010d87429d78d12ceff0e58b8..383621999128b69506381d060383c4c868f4fe39 100644
 --- a/src/main/java/org/bukkit/craftbukkit/CraftServer.java
 +++ b/src/main/java/org/bukkit/craftbukkit/CraftServer.java
-@@ -771,6 +771,7 @@ public final class CraftServer implements Server {
+@@ -772,6 +772,7 @@ public final class CraftServer implements Server {
      @Override
      public void reload() {
          org.spigotmc.WatchdogThread.hasStarted = false; // Paper - Disable watchdog early timeout on reload

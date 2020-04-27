@@ -5,7 +5,7 @@ Subject: [PATCH] EMC Add EntityEffectAddedEvent
 
 
 diff --git a/src/main/java/net/minecraft/server/EntityLiving.java b/src/main/java/net/minecraft/server/EntityLiving.java
-index 94e3a48bb227046fa5251b17908745c8ebe05bcc..741513faf2def6367964ce6cfefe7dd5a87dfc92 100644
+index 5ad0aacf01d714c5036d5be602a17cde36e7745f..bc3c9136eeb71a9f9126e543802dca77a1a90ad5 100644
 --- a/src/main/java/net/minecraft/server/EntityLiving.java
 +++ b/src/main/java/net/minecraft/server/EntityLiving.java
 @@ -803,6 +803,16 @@ public abstract class EntityLiving extends Entity {

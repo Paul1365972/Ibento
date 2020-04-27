@@ -6,10 +6,10 @@ Subject: [PATCH] EMC PlayerUseItem Event
 This lets us control when an item is consumed and change the item.
 
 diff --git a/src/main/java/net/minecraft/server/EntityLiving.java b/src/main/java/net/minecraft/server/EntityLiving.java
-index dfb9421a15ba1ca7b86146cb795a3ac5e9b8e15e..94e3a48bb227046fa5251b17908745c8ebe05bcc 100644
+index 3fc2360a103a5399f2878eccb0c13eb6e41e824d..5ad0aacf01d714c5036d5be602a17cde36e7745f 100644
 --- a/src/main/java/net/minecraft/server/EntityLiving.java
 +++ b/src/main/java/net/minecraft/server/EntityLiving.java
-@@ -1899,7 +1899,7 @@ public abstract class EntityLiving extends Entity {
+@@ -1912,7 +1912,7 @@ public abstract class EntityLiving extends Entity {
          }
      }
  
