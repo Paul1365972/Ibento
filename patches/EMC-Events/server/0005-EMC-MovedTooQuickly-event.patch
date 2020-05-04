@@ -6,10 +6,10 @@ Subject: [PATCH] EMC MovedTooQuickly event
 also make creative immune to this event
 
 diff --git a/src/main/java/net/minecraft/server/PlayerConnection.java b/src/main/java/net/minecraft/server/PlayerConnection.java
-index 38ec22f4c0348e9198eededee05cde58c0248de4..ce3220e1da187516e8ac88f0edb0005c6c40ccce 100644
+index a188d9f3b600e1013e31d681f9c6a8deb64ada7e..28b5e5f2236cb90933d554b7d25368b0ae7e5b99 100644
 --- a/src/main/java/net/minecraft/server/PlayerConnection.java
 +++ b/src/main/java/net/minecraft/server/PlayerConnection.java
-@@ -1012,9 +1012,11 @@ public class PlayerConnection implements PacketListenerPlayIn {
+@@ -1028,9 +1028,11 @@ public class PlayerConnection implements PacketListenerPlayIn {
  
                                  if (d11 - d10 > Math.max(f2, Math.pow((double) (org.spigotmc.SpigotConfig.movedTooQuicklyMultiplier * (float) i * speed), 2)) && !this.isExemptPlayer()) {
                                  // CraftBukkit end
