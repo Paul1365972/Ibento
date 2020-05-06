@@ -5,10 +5,10 @@ Subject: [PATCH] EMC SnowmanThrowSnowballEvent
 
 
 diff --git a/src/main/java/net/minecraft/server/EntitySnowman.java b/src/main/java/net/minecraft/server/EntitySnowman.java
-index 07ca1a4987957d0469a86af6a474545845e5981a..15b0ca94a32d1d5891607cc8c47f203e821132be 100644
+index dee55c5dea2af4b8b558b2baef31cc81dce8a3d9..9d1cfae9e0988b3d9d52892b5f0c8aa1ad0c08af 100644
 --- a/src/main/java/net/minecraft/server/EntitySnowman.java
 +++ b/src/main/java/net/minecraft/server/EntitySnowman.java
-@@ -10,6 +10,25 @@ public class EntitySnowman extends EntityGolem implements IRangedEntity {
+@@ -9,6 +9,25 @@ public class EntitySnowman extends EntityGolem implements IRangedEntity {
  
      private static final DataWatcherObject<Byte> b = DataWatcher.a(EntitySnowman.class, DataWatcherRegistry.a);
  
@@ -34,7 +34,7 @@ index 07ca1a4987957d0469a86af6a474545845e5981a..15b0ca94a32d1d5891607cc8c47f203e
      public EntitySnowman(EntityTypes<? extends EntitySnowman> entitytypes, World world) {
          super(entitytypes, world);
      }
-@@ -99,6 +118,7 @@ public class EntitySnowman extends EntityGolem implements IRangedEntity {
+@@ -98,6 +117,7 @@ public class EntitySnowman extends EntityGolem implements IRangedEntity {
          float f1 = MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F;
  
          entitysnowball.shoot(d1, d2 + (double) f1, d3, 1.6F, 12.0F);

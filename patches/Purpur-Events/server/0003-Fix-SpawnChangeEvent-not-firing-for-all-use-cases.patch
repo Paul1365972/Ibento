@@ -5,10 +5,10 @@ Subject: [PATCH] Fix SpawnChangeEvent not firing for all use-cases
 
 
 diff --git a/src/main/java/net/minecraft/server/World.java b/src/main/java/net/minecraft/server/World.java
-index cc1e6f64f4ff542757dcf79686b0a37b38761367..d1cccca80d8f0d811bc621b30ae453c4e66c966e 100644
+index 858493359c04d5eb80285dd0760bea4f247aff8c..5b03dfe6e4c35e59dca5090dc5204b12df33fd04 100644
 --- a/src/main/java/net/minecraft/server/World.java
 +++ b/src/main/java/net/minecraft/server/World.java
-@@ -1427,8 +1427,11 @@ public abstract class World implements GeneratorAccess, AutoCloseable {
+@@ -1432,8 +1432,11 @@ public abstract class World implements GeneratorAccess, AutoCloseable {
          return blockposition;
      }
  
@@ -21,7 +21,7 @@ index cc1e6f64f4ff542757dcf79686b0a37b38761367..d1cccca80d8f0d811bc621b30ae453c4
  
      public boolean a(EntityHuman entityhuman, BlockPosition blockposition) {
 diff --git a/src/main/java/org/bukkit/craftbukkit/CraftWorld.java b/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
-index ac257d50dea8f42a515f19bbae12ab5680e26bb4..608a97d04577f3c0f6121504f17505920bf156ff 100644
+index ee7ae4638981ab372f65734fb560157cc06c18e9..8100641dfe377ba5e1c4ed6b4ad7c44f57cf1c90 100644
 --- a/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
 +++ b/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
 @@ -383,12 +383,16 @@ public class CraftWorld implements World {

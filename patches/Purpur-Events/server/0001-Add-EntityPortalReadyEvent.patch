@@ -80,7 +80,7 @@ index 09c7c131833ded951e49a7a1a2eb2e1f6f8cb989..6880cdd7f94b0bd92d863e7c00d2ad02
                      break;
                      // CraftBukkit start - add the block to our list
 diff --git a/src/main/java/net/minecraft/server/Entity.java b/src/main/java/net/minecraft/server/Entity.java
-index 14ba037c1dc042f81123b3f31ad5c3485e59b773..9f8313ac420d69e633fa6c17c03f28b952853a43 100644
+index 8820e4b6506f645b98d23fe6eab044cc6cd54427..7695a746654c7a97cf365d1b6171b3a4da69ea5a 100644
 --- a/src/main/java/net/minecraft/server/Entity.java
 +++ b/src/main/java/net/minecraft/server/Entity.java
 @@ -169,9 +169,9 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke
@@ -96,7 +96,7 @@ index 14ba037c1dc042f81123b3f31ad5c3485e59b773..9f8313ac420d69e633fa6c17c03f28b9
      private boolean invulnerable;
      protected UUID uniqueID;
      protected String am;
-@@ -2249,6 +2249,7 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke
+@@ -2264,6 +2264,7 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke
                      this.world.getMethodProfiler().enter("portal");
                      this.ag = i;
                      this.portalCooldown = this.ba();
@@ -135,7 +135,7 @@ index f84dd6d9bec4c0f2f741bab20a4f45884594da2d..f50e9670bc63372cefe2cf30e695de3a
              }
          }
 diff --git a/src/main/java/net/minecraft/server/WorldServer.java b/src/main/java/net/minecraft/server/WorldServer.java
-index d13dc8fce9d2071ff2f5a5bd6a39ff160558fde1..a8dabc5657000c593ee5549bfb9d5f5bfb128e3a 100644
+index d9b3aa285a7b187f692088bab320f1de2160300b..172e27aaf877a053ad989f57b2a6859c65827e32 100644
 --- a/src/main/java/net/minecraft/server/WorldServer.java
 +++ b/src/main/java/net/minecraft/server/WorldServer.java
 @@ -75,7 +75,7 @@ public class WorldServer extends World {
