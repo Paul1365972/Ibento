@@ -135,7 +135,7 @@ index f84dd6d9bec4c0f2f741bab20a4f45884594da2d..f50e9670bc63372cefe2cf30e695de3a
              }
          }
 diff --git a/src/main/java/net/minecraft/server/WorldServer.java b/src/main/java/net/minecraft/server/WorldServer.java
-index d9b3aa285a7b187f692088bab320f1de2160300b..172e27aaf877a053ad989f57b2a6859c65827e32 100644
+index b3785775ecd8e3c13e7829f641f2c1b5fd0d9d47..3f8743096fb68addedbc40e7732c8f0a7e22e036 100644
 --- a/src/main/java/net/minecraft/server/WorldServer.java
 +++ b/src/main/java/net/minecraft/server/WorldServer.java
 @@ -75,7 +75,7 @@ public class WorldServer extends World {
