@@ -19,7 +19,7 @@ index 3fc2360a103a5399f2878eccb0c13eb6e41e824d..5ad0aacf01d714c5036d5be602a17cde
              this.setSlot(EnumItemSlot.MAINHAND, itemstack);
          } else {
 diff --git a/src/main/java/net/minecraft/server/PlayerInteractManager.java b/src/main/java/net/minecraft/server/PlayerInteractManager.java
-index ce66090b8dcd846db4507b99e3ef1a2d6104d19b..22b81296623f3fed85dbe081fdb31bd19b6ecf13 100644
+index b1c05304cc4c97ea0df0ea11d8d59c095288ba96..3cb91d9e78c1e89a3771493eece9b5c16493da53 100644
 --- a/src/main/java/net/minecraft/server/PlayerInteractManager.java
 +++ b/src/main/java/net/minecraft/server/PlayerInteractManager.java
 @@ -393,6 +393,15 @@ public class PlayerInteractManager {

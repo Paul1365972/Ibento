@@ -5,7 +5,7 @@ Subject: [PATCH] EMC Legacy Data Converter
 
 
 diff --git a/src/main/java/net/minecraft/server/DataConverterRegistry.java b/src/main/java/net/minecraft/server/DataConverterRegistry.java
-index 77c77973bb335cc89dae31bef2bbbcd4adc1d14b..c6757f7478c1beb4b15f9d00e3e04182d13ba863 100644
+index d957d5fc2dc724cdda553e3a67ffe65e1e41c304..3447870752282b389d1730b755a435831cf242e9 100644
 --- a/src/main/java/net/minecraft/server/DataConverterRegistry.java
 +++ b/src/main/java/net/minecraft/server/DataConverterRegistry.java
 @@ -16,7 +16,7 @@ public class DataConverterRegistry {

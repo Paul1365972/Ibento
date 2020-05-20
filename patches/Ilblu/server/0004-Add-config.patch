@@ -335,7 +335,7 @@ index 0000000000000000000000000000000000000000..84a0e4d353fe0ea1b98f4a2f089a10b8
 +    }
 +}
 diff --git a/src/main/java/net/minecraft/server/DedicatedServer.java b/src/main/java/net/minecraft/server/DedicatedServer.java
-index e62ca0543f1819259ad8720ad792fed3ef134d6a..323021868694b8dd677541f9d9b86394b20c9e14 100644
+index b07c49f1b48cc6dedd7c2057da0ec4f6f6d446e6..cd2d49b0a0812a5515f38cabb81bcf659187f3af 100644
 --- a/src/main/java/net/minecraft/server/DedicatedServer.java
 +++ b/src/main/java/net/minecraft/server/DedicatedServer.java
 @@ -192,6 +192,15 @@ public class DedicatedServer extends MinecraftServer implements IMinecraftServer
@@ -355,7 +355,7 @@ index e62ca0543f1819259ad8720ad792fed3ef134d6a..323021868694b8dd677541f9d9b86394
          // Paper end
  
 diff --git a/src/main/java/net/minecraft/server/World.java b/src/main/java/net/minecraft/server/World.java
-index 0e6368d0fb3beccb492ae3867fb4e22825f928a2..858493359c04d5eb80285dd0760bea4f247aff8c 100644
+index 508a3ed1ed041c21f5ec1fd18dfb01311e5310bf..de2e0e557aeb2a565fe4b55664660d2ff65c995b 100644
 --- a/src/main/java/net/minecraft/server/World.java
 +++ b/src/main/java/net/minecraft/server/World.java
 @@ -88,6 +88,8 @@ public abstract class World implements GeneratorAccess, AutoCloseable {
@@ -376,10 +376,10 @@ index 0e6368d0fb3beccb492ae3867fb4e22825f928a2..858493359c04d5eb80285dd0760bea4f
          this.generator = gen;
          this.world = new CraftWorld((WorldServer) this, gen, env);
 diff --git a/src/main/java/org/bukkit/craftbukkit/CraftServer.java b/src/main/java/org/bukkit/craftbukkit/CraftServer.java
-index a4c07e2abd734ba1f112e08ed1f8ed3ef9e69ff5..36a48a02b0338c33617642c9a75af360ae2156ab 100644
+index 4371592fbffce969d731fd8171277abaf550e881..968017d89d39f29cdd935b7f35c6b5b772282218 100644
 --- a/src/main/java/org/bukkit/craftbukkit/CraftServer.java
 +++ b/src/main/java/org/bukkit/craftbukkit/CraftServer.java
-@@ -814,6 +814,7 @@ public final class CraftServer implements Server {
+@@ -815,6 +815,7 @@ public final class CraftServer implements Server {
  
          org.spigotmc.SpigotConfig.init((File) console.options.valueOf("spigot-settings")); // Spigot
          com.destroystokyo.paper.PaperConfig.init((File) console.options.valueOf("paper-settings")); // Paper
@@ -387,7 +387,7 @@ index a4c07e2abd734ba1f112e08ed1f8ed3ef9e69ff5..36a48a02b0338c33617642c9a75af360
          for (WorldServer world : console.getWorlds()) {
              world.worldData.setDifficulty(config.difficulty);
              world.setSpawnFlags(config.spawnMonsters, config.spawnAnimals);
-@@ -842,6 +843,7 @@ public final class CraftServer implements Server {
+@@ -843,6 +844,7 @@ public final class CraftServer implements Server {
              }
              world.spigotConfig.init(); // Spigot
              world.paperConfig.init(); // Paper
@@ -395,7 +395,7 @@ index a4c07e2abd734ba1f112e08ed1f8ed3ef9e69ff5..36a48a02b0338c33617642c9a75af360
          }
  
          Plugin[] pluginClone = pluginManager.getPlugins().clone(); // Paper
-@@ -860,6 +862,7 @@ public final class CraftServer implements Server {
+@@ -861,6 +863,7 @@ public final class CraftServer implements Server {
          reloadData();
          org.spigotmc.SpigotConfig.registerCommands(); // Spigot
          com.destroystokyo.paper.PaperConfig.registerCommands(); // Paper
@@ -403,7 +403,7 @@ index a4c07e2abd734ba1f112e08ed1f8ed3ef9e69ff5..36a48a02b0338c33617642c9a75af360
          overrideAllCommandBlockCommands = commandsConfiguration.getStringList("command-block-overrides").contains("*");
          ignoreVanillaPermissions = commandsConfiguration.getBoolean("ignore-vanilla-permissions");
  
-@@ -2100,6 +2103,14 @@ public final class CraftServer implements Server {
+@@ -2134,6 +2137,14 @@ public final class CraftServer implements Server {
              return com.destroystokyo.paper.PaperConfig.config;
          }
  

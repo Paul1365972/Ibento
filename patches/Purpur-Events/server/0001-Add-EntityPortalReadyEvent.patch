@@ -80,10 +80,10 @@ index 09c7c131833ded951e49a7a1a2eb2e1f6f8cb989..6880cdd7f94b0bd92d863e7c00d2ad02
                      break;
                      // CraftBukkit start - add the block to our list
 diff --git a/src/main/java/net/minecraft/server/Entity.java b/src/main/java/net/minecraft/server/Entity.java
-index 8820e4b6506f645b98d23fe6eab044cc6cd54427..7695a746654c7a97cf365d1b6171b3a4da69ea5a 100644
+index e0ab058bf947ea10b37eadf6122292e708bd3809..c5e7e1ab73b9630abfabde5491b19ac2b31ebe0e 100644
 --- a/src/main/java/net/minecraft/server/Entity.java
 +++ b/src/main/java/net/minecraft/server/Entity.java
-@@ -169,9 +169,9 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke
+@@ -170,9 +170,9 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke
      protected boolean af; public final boolean inPortal() { return this.af; } // Paper - OBFHELPER
      protected int ag;
      public DimensionManager dimension;
@@ -96,7 +96,7 @@ index 8820e4b6506f645b98d23fe6eab044cc6cd54427..7695a746654c7a97cf365d1b6171b3a4
      private boolean invulnerable;
      protected UUID uniqueID;
      protected String am;
-@@ -2264,6 +2264,7 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke
+@@ -2268,6 +2268,7 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke
                      this.world.getMethodProfiler().enter("portal");
                      this.ag = i;
                      this.portalCooldown = this.ba();
@@ -135,7 +135,7 @@ index f84dd6d9bec4c0f2f741bab20a4f45884594da2d..f50e9670bc63372cefe2cf30e695de3a
              }
          }
 diff --git a/src/main/java/net/minecraft/server/WorldServer.java b/src/main/java/net/minecraft/server/WorldServer.java
-index b3785775ecd8e3c13e7829f641f2c1b5fd0d9d47..3f8743096fb68addedbc40e7732c8f0a7e22e036 100644
+index 9e32e2db10f5faaa3c5f4adc5cbc2c1a2e4d3073..039f592d20dbc5c25066ebb7c1e28fc62e7cc881 100644
 --- a/src/main/java/net/minecraft/server/WorldServer.java
 +++ b/src/main/java/net/minecraft/server/WorldServer.java
 @@ -75,7 +75,7 @@ public class WorldServer extends World {
