@@ -34,11 +34,11 @@ index 0f04bcc8b7cd5bd0536dd3fccab0f4dae6b0130b..e2607eaa9554f5bf648c8fa34dbbc7f5
 +        return this.spawnCreature(world, itemstack, nbttagcompound, ichatbasecomponent, entityhuman, blockposition, enummobspawn, flag, flag1, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason.SPAWNER_EGG);
      }
  
-+    @Nullable
+     @Nullable
 +    public T spawnCreature(World world, @Nullable NBTTagCompound nbttagcompound, @Nullable IChatBaseComponent ichatbasecomponent, @Nullable EntityHuman entityhuman, BlockPosition blockposition, EnumMobSpawn enummobspawn, boolean flag, boolean flag1) {
 +        return spawnCreature(world, null, nbttagcompound, ichatbasecomponent, entityhuman, blockposition, enummobspawn, flag, flag1, CreatureSpawnEvent.SpawnReason.NATURAL);
 +    }
-     @Nullable
++    @Nullable
      public T spawnCreature(World world, @Nullable NBTTagCompound nbttagcompound, @Nullable IChatBaseComponent ichatbasecomponent, @Nullable EntityHuman entityhuman, BlockPosition blockposition, EnumMobSpawn enummobspawn, boolean flag, boolean flag1, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason spawnReason) {
 +        return spawnCreature(world, null, nbttagcompound, ichatbasecomponent, entityhuman, blockposition, enummobspawn, flag, flag1, spawnReason);
 +    }

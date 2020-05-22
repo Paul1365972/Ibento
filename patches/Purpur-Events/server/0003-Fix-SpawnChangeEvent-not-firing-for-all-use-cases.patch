@@ -21,7 +21,7 @@ index de2e0e557aeb2a565fe4b55664660d2ff65c995b..eeabf5ec9488043a87fef0d7391aaf7c
  
      public boolean a(EntityHuman entityhuman, BlockPosition blockposition) {
 diff --git a/src/main/java/org/bukkit/craftbukkit/CraftWorld.java b/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
-index 589926d6029ca2a4aeb4f2c7903a5f9517deebef..6a58a41215a3128cfb0a059e2b39155c6d2d5486 100644
+index 7230ddbf6eb765390543bdb3ff8c08d383bb2666..06eaef6fc5d21fc9e3c91ed94076f72e468e8bfe 100644
 --- a/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
 +++ b/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
 @@ -384,12 +384,16 @@ public class CraftWorld implements World {
