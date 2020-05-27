@@ -135,10 +135,10 @@ index f84dd6d9bec4c0f2f741bab20a4f45884594da2d..f50e9670bc63372cefe2cf30e695de3a
              }
          }
 diff --git a/src/main/java/net/minecraft/server/WorldServer.java b/src/main/java/net/minecraft/server/WorldServer.java
-index 9e32e2db10f5faaa3c5f4adc5cbc2c1a2e4d3073..039f592d20dbc5c25066ebb7c1e28fc62e7cc881 100644
+index 854c97bddb711ed252c2ae8398247641fdfb10be..9beb7749960f4136be9f5e4c3184e77bb2671017 100644
 --- a/src/main/java/net/minecraft/server/WorldServer.java
 +++ b/src/main/java/net/minecraft/server/WorldServer.java
-@@ -75,7 +75,7 @@ public class WorldServer extends World {
+@@ -76,7 +76,7 @@ public class WorldServer extends World {
      public boolean savingDisabled;
      private boolean everyoneSleeping;
      private int emptyTime;
