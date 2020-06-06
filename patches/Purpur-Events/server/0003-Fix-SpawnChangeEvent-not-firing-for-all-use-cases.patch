@@ -5,7 +5,7 @@ Subject: [PATCH] Fix SpawnChangeEvent not firing for all use-cases
 
 
 diff --git a/src/main/java/net/minecraft/server/World.java b/src/main/java/net/minecraft/server/World.java
-index 30ddc2b21508bcdfa22eae4e12e0f08c0ab3e8cb..7b4ad1ed1345708f2f0f3f04d582df5c78bc7e87 100644
+index a267e596e1ce79c981e5ad53df9873fc5695ba6a..6c52bb4a82294812d24e0e1a4255fdde009a9b49 100644
 --- a/src/main/java/net/minecraft/server/World.java
 +++ b/src/main/java/net/minecraft/server/World.java
 @@ -1437,8 +1437,11 @@ public abstract class World implements GeneratorAccess, AutoCloseable {

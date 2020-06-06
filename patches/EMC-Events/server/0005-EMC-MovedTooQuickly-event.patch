@@ -6,7 +6,7 @@ Subject: [PATCH] EMC MovedTooQuickly event
 also make creative immune to this event
 
 diff --git a/src/main/java/net/minecraft/server/PlayerConnection.java b/src/main/java/net/minecraft/server/PlayerConnection.java
-index b25b3b48165e5fef4db99c2838de21d4eca502f4..be4392197a050eee2fd183cc5b003d1bbdf12012 100644
+index d52fbda79fe1c52d3ddb53c0f1c1f521d7620702..98f1eaede4997006708fcdd4ef7cea88510f05e9 100644
 --- a/src/main/java/net/minecraft/server/PlayerConnection.java
 +++ b/src/main/java/net/minecraft/server/PlayerConnection.java
 @@ -1033,9 +1033,11 @@ public class PlayerConnection implements PacketListenerPlayIn {
